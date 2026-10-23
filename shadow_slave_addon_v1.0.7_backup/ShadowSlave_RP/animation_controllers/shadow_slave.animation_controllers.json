@@ -1,0 +1,21 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.shadow_slave.idle": {
+      "states": {
+        "default": {
+          "animations": ["idle"],
+          "transitions": [
+            {"walk": "query.is_moving"}
+          ]
+        },
+        "walk": {
+          "animations": ["walk"],
+          "transitions": [
+            {"default": "query.is_idle"}
+          ]
+        }
+      }
+    }
+  }
+}
