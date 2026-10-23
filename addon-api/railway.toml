@@ -1,0 +1,25 @@
+[build]
+builder = "nixpacks"
+buildCommand = "pip install -r requirements.txt"
+
+[deploy]
+startCommand = "uvicorn main:app --host 0.0.0.0 --port $PORT"
+healthcheckPath = "/health"
+healthcheckTimeout = 30
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
+
+# Resource limits (Railway free tier)
+[resources]
+memory = 512  # MB
+cpu = 0.5     # vCPU
+
+# Environment variables (set these in Railway dashboard)
+# Required:
+# GROQ_API_KEY=gsk_...
+# OPENROUTER_API_KEY=sk-or-...
+# Optional:
+# TOGETHER_API_KEY=...
+# GOOGLE_API_KEY=...
+# DATABASE_URL= (auto-provided by Railway PostgreSQL)
+# REDIS_URL= (auto-provided by Railway Redis)
