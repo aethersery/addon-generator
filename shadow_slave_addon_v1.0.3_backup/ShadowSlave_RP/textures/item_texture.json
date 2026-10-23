@@ -1,0 +1,18 @@
+{
+  "resource_pack_name": "shadow_slave_rp",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "spawn_egg": {
+      "textures": "textures/items/spawn_egg"
+    },
+    "shadow_essence": {
+      "textures": "textures/items/shadow_essence"
+    },
+    "soul_fragment": {
+      "textures": "textures/items/soul_fragment"
+    },
+    "soul_core": {
+      "textures": "textures/items/soul_core"
+    }
+  }
+}
