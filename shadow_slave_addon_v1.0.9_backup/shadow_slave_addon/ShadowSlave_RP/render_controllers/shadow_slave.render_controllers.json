@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.shadow_slave": {
+      "geometry": "geometry.shadow_slave",
+      "materials": [{"*": "Entity"}, {"*": "Entity_alphatest"}],
+      "textures": ["texture.shadow_slave"]
+    }
+  }
+}
