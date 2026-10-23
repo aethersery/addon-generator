@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "shadow_slave:echo_shade",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/echo_shade"
+      },
+      "geometry": {
+        "default": "geometry.echo_shade"
+      },
+      "render_controllers": [
+        "controller.render.echo_shade"
+      ],
+      "animations": {
+        "idle": "animation.echo_shade.idle",
+        "walk": "animation.echo_shade.walk"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 0
+      }
+    }
+  }
+}
