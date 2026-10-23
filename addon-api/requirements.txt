@@ -1,0 +1,58 @@
+# Addon Generator API Requirements
+# Core Framework
+fastapi
+uvicorn[standard]
+httpx
+pydantic
+pydantic-settings
+python-dotenv
+
+# LangGraph & LLM
+langgraph
+langchain-core
+langchain-openai
+langchain-groq
+langchain-google-genai
+langchain-anthropic
+langchain-together
+langchain-community
+
+# Database & Cache
+redis
+asyncpg
+sqlalchemy
+alembic
+aiomysql  # For PlanetScale
+
+# Utilities
+python-multipart
+aiofiles
+jsonschema
+pyyaml
+tenacity
+structlog
+
+# Web Scraping & HTML Parsing
+beautifulsoup4
+lxml
+
+# Image Processing
+pillow
+
+# Git Operations
+gitpython
+
+# Data Processing
+numpy
+pandas
+
+# Optional: ML/AI (for future texture generation)
+# torch
+# torchvision
+# diffusers
+# transformers
+# accelerate
+
+# Optional: Async SQLAlchemy for PlanetScale
+# aiomysql
+# pymysql
