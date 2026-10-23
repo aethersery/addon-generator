@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.shadow_slave.idle": {
+      "loop": true,
+      "animation_length": 2,
+      "bones": {
+        "body": {
+          "position": [0, "math.sin(query.anim_time*180)*0.1", 0]
+        }
+      }
+    },
+    "animation.shadow_slave.walk": {
+      "loop": true,
+      "animation_length": 0.8,
+      "bones": {
+        "left_leg": {
+          "rotation": ["math.sin(query.anim_time*450)*30", 0, 0]
+        },
+        "right_leg": {
+          "rotation": ["-math.sin(query.anim_time*450)*30", 0, 0]
+        }
+      }
+    }
+  }
+}
